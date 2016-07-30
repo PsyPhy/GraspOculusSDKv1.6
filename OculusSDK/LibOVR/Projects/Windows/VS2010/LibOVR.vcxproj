@@ -19,6 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\LibOVRKernel\Src\GL\CAPI_GLE.h" />
+    <ClInclude Include="..\..\..\..\LibOVRKernel\Src\GL\CAPI_GLE_GL.h" />
     <ClInclude Include="..\..\..\Include\OVR_CAPI.h" />
     <ClInclude Include="..\..\..\Include\OVR_CAPI_D3D.h" />
     <ClInclude Include="..\..\..\Include\OVR_CAPI_GL.h" />
@@ -30,6 +32,7 @@
     <ClInclude Include="..\..\..\Src\OVR_StereoProjection.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\LibOVRKernel\Src\GL\CAPI_GLE.cpp" />
     <ClCompile Include="..\..\..\Src\OVR_CAPIShim.c" />
     <ClCompile Include="..\..\..\Src\OVR_CAPI_Util.cpp" />
     <ClCompile Include="..\..\..\Src\OVR_StereoProjection.cpp" />
@@ -130,7 +133,7 @@
       <MinimalRebuild>false</MinimalRebuild>
       <OmitDefaultLibName>true</OmitDefaultLibName>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);../../../Include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../Include;../../../../LibOVRKernel\Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ShowIncludes>false</ShowIncludes>
       <AdditionalOptions>/FC %(AdditionalOptions)</AdditionalOptions>
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
@@ -184,7 +187,7 @@
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <OmitDefaultLibName>true</OmitDefaultLibName>
       <DebugInformationFormat>OldStyle</DebugInformationFormat>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);../../../Include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../Include;../../../../LibOVRKernel\Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <WholeProgramOptimization>false</WholeProgramOptimization>
       <AdditionalOptions>/FC /d2Zi+ %(AdditionalOptions)</AdditionalOptions>
       <RuntimeTypeInfo>false</RuntimeTypeInfo>

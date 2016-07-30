@@ -4,6 +4,9 @@
     <Filter Include="Include">
       <UniqueIdentifier>{19aff241-4a7e-4895-92de-c834a9ebc8f1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="CAPI_GLE">
+      <UniqueIdentifier>{e329dd26-4b54-4617-9f66-79e38a10aca6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Include\OVR_CAPI.h">
@@ -29,11 +32,19 @@
     </ClInclude>
     <ClInclude Include="..\..\..\Src\OVR_CAPI_Prototypes.h" />
     <ClInclude Include="..\..\..\Src\OVR_StereoProjection.h" />
-    <ClInclude Include="..\..\..\Include\OVR_CAPI_Audio.h" />
+    <ClInclude Include="..\..\..\..\LibOVRKernel\Src\GL\CAPI_GLE.h">
+      <Filter>CAPI_GLE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\LibOVRKernel\Src\GL\CAPI_GLE_GL.h">
+      <Filter>CAPI_GLE</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Src\OVR_CAPIShim.c" />
     <ClCompile Include="..\..\..\Src\OVR_StereoProjection.cpp" />
     <ClCompile Include="..\..\..\Src\OVR_CAPI_Util.cpp" />
+    <ClCompile Include="..\..\..\..\LibOVRKernel\Src\GL\CAPI_GLE.cpp">
+      <Filter>CAPI_GLE</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
